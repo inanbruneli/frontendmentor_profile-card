@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- [Solution URL!](https://inanbruneli.github.io/frontendmentor_profile-card/)
+- [Solution Live URL](https://inanbruneli.github.io/frontendmentor_profile-card/)
 
 ## My process
 
@@ -40,6 +40,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 This was pretty easy to develop, I did not use grid or flexbox, even though I know how to use it.
 I just want to track my progress and learn with FrontEndMentor and GitHub.
+If you have something to say about this project, please, feel free to say it, I would love to hear your feedback 🚀🚀
 
 ## Author
 
