@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">-->
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+    body {
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .content {
+        width: 375px;
+        height: 670px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1AA1AD;
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-size: 400px 500px, 500px 600px;
+        background-repeat: no-repeat;
+        background-position: -190px -280px, 170px 370px;
+      }
+
+      .card {
+        width: 87%;
+        height: 55.5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        box-shadow: 20px 40px 20px rgba(0, 0, 0, .08);
+      }
+
+      .card-up {
+        background-image: url(images/bg-pattern-card.svg);
+        background-size: cover;
+        width: 100%;
+        height: 38%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .card-down {
+        background-color: white;
+        width: 100%;
+        height: 62%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      .card-pic {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+        background-image: url(images/image-victor.jpg);
+        background-size: cover;
+        border: 5px solid white;
+        border-radius: 50%;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .main-title {
+        width: 100%;
+        text-align: center;
+      }
+
+      .main-title h1,
+      .main-title h2 {
+        display: inline-block;
+        margin-top: 22%;
+      }
+
+      .main-title h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+      }
+
+      .main-title h2 {
+        margin-left: 1%;
+        font-weight: 400;
+        font-size: 18px;
+        color: hsl(227, 10%, 46%);
+      }
+
+      .city {
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: hsl(227, 10%, 46%);
+        margin-top: -1%;
+      }
+
+      .line {
+        width: 100%;
+        height: 4.5%;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+        opacity: .3;
+      }
+
+
+      .all-footer {
+        width: 85%;
+        margin: auto;
+      }
+
+      .footer {
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .footer h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+        margin-top: 27px;
+        margin-bottom: -4px;
+      }
+
+      .footer h2 {
+        font-weight: 400;
+        font-size: 10px;
+        color: hsl(227, 10%, 46%);
+        letter-spacing: .1rem;
+        margin-top: 10%;
+      }
+    }
+
+    @media only screen and (min-width: 401px) {
+      .content {
+        width: 1440px;
+        height: 720px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1AA1AD;
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-size: 1000px 1000px, 970px 1000px;
+        background-repeat: no-repeat;
+        background-position: -305px -530px, 690px 370px;
+      }
+
+      .card {
+        width: 24.2%;
+        height: 52.5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        box-shadow: 25px 40px 20px rgba(0, 0, 0, .08);
+      }
+
+      .card-up {
+        background-image: url(images/bg-pattern-card.svg);
+        background-size: cover;
+        width: 100%;
+        height: 38%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .card-down {
+        background-color: white;
+        width: 100%;
+        height: 62%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      .card-pic {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+        background-image: url(images/image-victor.jpg);
+        background-size: cover;
+        border: 5px solid white;
+        border-radius: 50%;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .main-title {
+        width: 100%;
+        text-align: center;
+      }
+
+      .main-title h1,
+      .main-title h2 {
+        display: inline-block;
+        margin-top: 22%;
+      }
+
+      .main-title h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+      }
+
+      .main-title h2 {
+        margin-left: 1%;
+        font-weight: 400;
+        font-size: 18px;
+        color: hsl(227, 10%, 46%);
+      }
+
+      .city {
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: hsl(227, 10%, 46%);
+        margin-top: -1%;
+      }
+
+      .line {
+        width: 100%;
+        height: 4.5%;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+        opacity: .3;
+      }
+
+
+      .all-footer {
+        width: 85%;
+        margin: auto;
+      }
+
+      .footer {
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .footer h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+        margin-top: 27px;
+        margin-bottom: -4px;
+      }
+
+      .footer h2 {
+        font-weight: 400;
+        font-size: 10px;
+        color: hsl(227, 10%, 46%);
+        letter-spacing: .1rem;
+        margin-top: 10%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="card">
+      <div class="card-up"></div>
+      <div class="card-pic"></div>
+      <div class="card-down">
+
+        <div class="main-title">
+          <h1>Victor Crest</h1>
+          <h2>26</h2>
+        </div>
+        <h3 class="city">London</h3>
+
+        <div class="line"></div>
+
+        <div class="all-footer">
+          <div class="footer">
+            <h1>80K</h1>
+            <h2>Followers</h2>
+          </div>
+
+          <div class="footer">
+            <h1>803K</h1>
+            <h2>Likes</h2>
+          </div>
+
+          <div class="footer">
+            <h1>1.4K</h1>
+            <h2>Photos</h2>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</body>
+
+</html>
