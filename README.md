@@ -22,24 +22,24 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](design/screenshot.jpg)
-![](design/screenshot_solution.jpg)
+<!--![](design/screenshot.jpg)-->
+![](design/screenshot-solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://inanbruneli.github.io/frontendmentor_profile-card/)
+- [Solution URL!](https://inanbruneli.github.io/frontendmentor_profile-card/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS3 custom properties
+- HTML5
+- CSS3
 
 ### Continued development
 
-This was pretty easy to develop, I did not use grid or flexbox, even though I know how to use.
-I just want to track my progress, learning with FrontEndMentor and GitHub.
+This was pretty easy to develop, I did not use grid or flexbox, even though I know how to use it.
+I just want to track my progress and learn with FrontEndMentor and GitHub.
 
 ## Author
 
