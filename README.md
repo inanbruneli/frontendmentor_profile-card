@@ -22,8 +22,10 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
+- Original design
 ![](design/screenshot.jpg)
 
+- My solution
 ![](design/screenshot-solution.jpg)
 
 ### Links
